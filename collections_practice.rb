@@ -39,21 +39,14 @@ def reverse_array(array)
   array.reverse
 end
 
+
 def kesha_maker(lyrics)
 array = []
-final_array = []
-string = ""
   lyrics.each do |word|
     word[2] = "$"
-    x = "$"
-    array = [word[0..1], x]
-      if word.length > 3
-        array.push(word[3..-1])     
-      end
-    string = array.join
-    final_array.push(string)
+    array.push(word)
   end
-  return final_array
+  return array
 end
 
 def find_a(array)
