@@ -39,16 +39,18 @@ def reverse_array(array)
   array.reverse
 end
 
-def kesha_maker(array)
-  array.each do |word|
-    word_array = word.split
-    x = word_array[2]
-    y = "$"
-    x,y = y,x
-    puts x
-    puts y
+def kesha_maker(lyrics)
+array = []
+final_array = []
+string = ""
+  lyrics.each do |word|
+    x = "$"
+    array = [word[0..1], x]
+      if word.length > 3
+        array.push(word[3..-1])     
+      end
+    string = array.join
+    final_array.push(string)
   end
+  return final_array
 end
-
-song = ["The", "quick", "brown", "fox"]
-kesha_maker(song)
