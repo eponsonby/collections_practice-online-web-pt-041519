@@ -44,6 +44,7 @@ array = []
 final_array = []
 string = ""
   lyrics.each do |word|
+    word[2] = "$"
     x = "$"
     array = [word[0..1], x]
       if word.length > 3
