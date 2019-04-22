@@ -53,6 +53,10 @@ def find_a(array)
   end
 end
 
-def sum_array(array)
-  
+def sum_array(numbers_array)
+  sum = 0
+  numbers_array.each do |number|
+    sum = sum + number
+  end
+  return sum
 end
