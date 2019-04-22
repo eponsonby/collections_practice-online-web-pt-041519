@@ -41,7 +41,6 @@ end
 
 
 def kesha_maker(lyrics)
-array = []
   lyrics.each do |word|
     word[2] = "$"
     array.push(word)
