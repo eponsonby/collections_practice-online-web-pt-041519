@@ -43,9 +43,8 @@ end
 def kesha_maker(lyrics)
   lyrics.each do |word|
     word[2] = "$"
-    array.push(word)
   end
-  return array
+  return lyrics
 end
 
 def find_a(array)
