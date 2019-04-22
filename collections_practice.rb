@@ -60,3 +60,5 @@ def sum_array(numbers_array)
   end
   return sum
 end
+
+def add_s(array)
