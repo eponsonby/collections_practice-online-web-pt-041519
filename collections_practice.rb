@@ -57,6 +57,5 @@ end
 
 def find_a(array)
   array.select do |string|
-    
-  start_with
+    string.start_with
 end
