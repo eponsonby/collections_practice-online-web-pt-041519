@@ -54,3 +54,7 @@ string = ""
   end
   return final_array
 end
+
+def find_a(array)
+  start_with
+end
